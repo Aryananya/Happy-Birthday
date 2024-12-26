@@ -1,0 +1,151 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+
+body {
+    background-color: pink;
+}
+
+.nav{
+    width:100vw;
+    font-size:30px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    text-decoration: solid;
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    animation-name: top;
+    animation-duration:3s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes top{
+    0% {
+        letter-spacing: 40px;
+        font-size:10px;
+    }
+    100%{
+        letter-spacing: 1px;
+    }
+}
+
+.main {
+    position:fixed;
+    top: 20vh;
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(161, 74, 88);
+    font-size: 100px;
+    font-family: Tangerine , serif;
+    font-weight: 900;
+}
+
+#happy {
+    display:flex;
+    justify-content: left;
+    animation-name: alpha;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    height: 20vh;
+}
+
+@keyframes alpha{
+    0% {
+        font-size: 0px;
+    }
+
+    100% {
+        font-size: 100px;
+    }
+}
+
+#birthday {
+    display:flex;
+    justify-content: center;
+    animation-name: beta;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    height: 20vh;
+}
+
+@keyframes beta{
+    0% {
+        font-size: 0px;
+    }
+
+    33% {
+        font-size: 0px;
+    }
+
+    66% {
+        font-size: 100px;
+    }
+}
+
+
+#ananya {
+    display:flex;
+    justify-content: right;
+    animation-name: gamma;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    height: 20vh;
+}
+
+@keyframes gamma{
+    0% {
+        font-size: 0px;
+    }
+
+    66% {
+        font-size: 0px;
+    }
+
+    100% {
+        font-size: 100px;
+    }
+}
+
+#small {
+    font-size: 20px;
+    animation-name: gamma;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+a {
+    padding: 15px;
+    border: 4px solid  rgb(161, 74, 88);
+    background-color: rgb(255, 0, 0);
+    color:black;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.back{
+    position : fixed;
+    bottom: 10px;
+    left: 40px;
+}
+
+.next{
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+}
